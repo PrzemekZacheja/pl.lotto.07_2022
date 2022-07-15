@@ -1,4 +1,4 @@
-package pl.lotto;
+package pl.lotto.interfaces;
 
 import java.io.IOException;
 

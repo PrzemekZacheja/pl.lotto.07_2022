@@ -1,4 +1,4 @@
-package pl.lotto;
+package pl.lotto.messengers;
 
 public class Messenger {
 

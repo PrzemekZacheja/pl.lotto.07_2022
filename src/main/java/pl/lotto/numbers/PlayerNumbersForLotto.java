@@ -1,4 +1,9 @@
-package pl.lotto;
+package pl.lotto.numbers;
+
+import pl.lotto.messengers.Messenger;
+import pl.lotto.interfaces.Numbers;
+import pl.lotto.validator.ReplayChecker;
+import pl.lotto.validator.ValidatorOfRange;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,6 +1,7 @@
 package pl.lotto;
 
 import org.junit.jupiter.api.Test;
+import pl.lotto.numbers.PlayerNumbersForLotto;
 
 import java.io.IOException;
 

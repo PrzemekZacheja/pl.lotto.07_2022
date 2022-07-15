@@ -1,4 +1,10 @@
-package pl.lotto;
+package pl.lotto.games;
+
+import pl.lotto.interfaces.Game;
+import pl.lotto.interfaces.Numbers;
+import pl.lotto.messengers.Messenger;
+import pl.lotto.numbers.GeneratorRandomNumbers;
+import pl.lotto.numbers.PlayerNumbersForLotto;
 
 import java.io.IOException;
 import java.util.Arrays;

@@ -1,5 +1,8 @@
 package pl.lotto;
 
+import pl.lotto.games.Lotto;
+import pl.lotto.interfaces.Game;
+
 import java.io.IOException;
 
 public class Main {

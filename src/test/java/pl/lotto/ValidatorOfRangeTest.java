@@ -1,6 +1,7 @@
 package pl.lotto;
 
 import org.junit.jupiter.api.Test;
+import pl.lotto.validator.ValidatorOfRange;
 
 import static org.junit.jupiter.api.Assertions.*;
 

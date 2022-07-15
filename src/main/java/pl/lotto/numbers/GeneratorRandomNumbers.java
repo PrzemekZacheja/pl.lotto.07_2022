@@ -1,4 +1,8 @@
-package pl.lotto;
+package pl.lotto.numbers;
+
+import pl.lotto.interfaces.Numbers;
+import pl.lotto.validator.ReplayChecker;
+import pl.lotto.validator.ValidatorOfRange;
 
 import java.io.IOException;
 import java.util.Random;
