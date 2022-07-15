@@ -18,7 +18,10 @@ public class Lotto implements Game {
     public void play() throws IOException {
         showStartingInstructions();
         int[] playerNumbers = numbersFromPlayer.getNumbers();
+        System.out.println(Messenger.YOUR_NUMBERS + Arrays.toString(playerNumbers));
         int[] randomNumbers = random.getNumbers();
+        System.out.println(Messenger.DRAWN_NUMBERS + Arrays.toString(randomNumbers));
+
         if (isArraysEquals(playerNumbers, randomNumbers)) {
             System.out.println(Messenger.WINNER);
         } else {
