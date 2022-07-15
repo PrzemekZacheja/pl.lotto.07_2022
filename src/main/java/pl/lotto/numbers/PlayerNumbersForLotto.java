@@ -35,7 +35,7 @@ public class PlayerNumbersForLotto implements Numbers {
     }
 
     private int getCorrectNumber() throws IOException {
-        int oneNumberFromBuffer = Integer.parseInt(reader.readLine());
+        int oneNumberFromBuffer = reader.read();
         oneNumberFromBuffer = getNumberInRange(oneNumberFromBuffer);
         oneNumberFromBuffer = getUniqueNumber(oneNumberFromBuffer);
         return oneNumberFromBuffer;
@@ -44,7 +44,7 @@ public class PlayerNumbersForLotto implements Numbers {
     private int getNumberInRange(int oneNumberFromBuffer) throws IOException {
         while (!validator.validate(oneNumberFromBuffer)) {
             System.out.println(Messenger.WRONG_NUMBER);
-            oneNumberFromBuffer = Integer.parseInt(reader.readLine());
+            oneNumberFromBuffer = reader.read();
             getUniqueNumber(oneNumberFromBuffer);
         }
         return oneNumberFromBuffer;
@@ -53,7 +53,7 @@ public class PlayerNumbersForLotto implements Numbers {
     private int getUniqueNumber(int oneNumberFromBuffer) throws IOException {
         while (checker.check(oneNumberFromBuffer, numbersFromPlayer)){
             System.out.println(Messenger.NUMBER_ALREADY_EXIST);
-            oneNumberFromBuffer = Integer.parseInt(reader.readLine());
+            oneNumberFromBuffer = reader.read();
             getNumberInRange(oneNumberFromBuffer);
         }
         return oneNumberFromBuffer;

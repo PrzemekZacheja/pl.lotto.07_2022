@@ -5,14 +5,13 @@ import pl.lotto.interfaces.Numbers;
 import pl.lotto.messengers.Messenger;
 import pl.lotto.numbers.GeneratorRandomNumbers;
 import pl.lotto.numbers.PlayerNumbersForLotto;
-
 import java.io.IOException;
 import java.util.Arrays;
 
 public class Lotto implements Game {
 
-    Numbers numbersFromPlayer = new PlayerNumbersForLotto();
-    Numbers random = new GeneratorRandomNumbers();
+    private Numbers numbersFromPlayer = new PlayerNumbersForLotto();
+    private Numbers random = new GeneratorRandomNumbers();
 
     @Override
     public void play() throws IOException {
